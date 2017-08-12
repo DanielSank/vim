@@ -17,9 +17,9 @@ set grepprg=ag\ --nogroup\ --nocolor
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:ctrlp_use_caching = 0
 
+" Use jj instead of ESC
 inoremap jj <Esc>
 
-" End vundle stuff, begin my stuff
 filetype on
 filetype plugin on
 filetype indent on
@@ -29,8 +29,9 @@ syntax on
 set list
 set listchars=tab:>-,space:·
 
+" Show matching braces etc.
 set showmatch
+" highlight search results
 set hlsearch
-
 " Map ENTER to turn off search highlighting
 nnoremap <CR> :nohlsearch<CR>/<BS><CR>
