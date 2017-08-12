@@ -7,4 +7,6 @@ My vim configuration
 
 1. `$ ln -s ~/.vim/vimrc ~/.vimrc`
 
-1. Install plugins
+1. Install plugins: reload `.vimrc` and do `:PlugInstall`.
+
+1. Compile `YouCompleteMe` according to its own docs.
