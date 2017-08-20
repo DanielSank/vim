@@ -4,6 +4,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'easymotion/vim-easymotion'
 Plug 'kien/ctrlp.vim'
 Plug 'jlanzarotta/bufexplorer'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
