@@ -1,10 +1,11 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'Valloric/YouCompleteMe'
-Plug 'easymotion/vim-easymotion'
-Plug 'kien/ctrlp.vim'
 Plug 'jlanzarotta/bufexplorer'
+Plug 'kien/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'tmhedberg/SimpylFold'
 Plug 'leafgarland/typescript-vim'
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
