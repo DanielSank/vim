@@ -9,6 +9,9 @@ Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
+" bufexplorer
+let g:bufExplorerShowRelativePath=1
+let g:bufExplorerSplitOutPathName=0
 " Let \\ open the bufexplorer
 map <Leader>\ <Leader>be
 
