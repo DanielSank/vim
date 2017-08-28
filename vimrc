@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'jlanzarotta/bufexplorer'
 Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'rust-lang/rust.vim'
 Plug 'tmhedberg/SimpylFold'
 Plug 'leafgarland/typescript-vim'
 Plug 'Valloric/YouCompleteMe'
