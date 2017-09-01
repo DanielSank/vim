@@ -10,6 +10,9 @@ Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
+" Ignore certain filetypes
+set wildignore=*.git,*.bak,*.pyc,*.swp,*.swp,*~
+
 " bufexplorer
 let g:bufExplorerShowRelativePath=1
 let g:bufExplorerSplitOutPathName=0
