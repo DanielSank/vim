@@ -38,6 +38,10 @@ if executable('ag')
   " No cache
   let g:ctrlp_user_caching = 0
 endif
+" create the Ag editor command to allow custom ag searches
+command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+" now map \/ to recursive search
+nnoremap <Leader>/ :Ag<space>''<left>
 
 "" window navigation
 map <C-h> <C-w>h
