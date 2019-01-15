@@ -49,6 +49,10 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+"" YouCompleteMe
+nnoremap <Leader>gd :YcmCompleter GoToDefinition<Cr>
+nnoremap <Leader>gr :YcmCompleter GoToReferences<Cr>
+
 "" **General editor stuff**
 
 " Ignore certain filetypes
