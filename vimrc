@@ -5,8 +5,11 @@ Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'rust-lang/rust.vim'
 Plug 'tmhedberg/SimpylFold'
+Plug 'tpope/vim-surround'
+Plug 'majutsushi/tagbar'
 Plug 'leafgarland/typescript-vim'
 Plug 'Valloric/YouCompleteMe'
+
 
 call plug#end()
 
@@ -28,6 +31,9 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-b)
 map <Leader>l <Plug>(easymotion-w)
+
+"" tagbar
+nmap <F8> :TagbarToggle<CR>
 
 "" silver Searcher
 if executable('ag')
