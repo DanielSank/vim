@@ -8,6 +8,7 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
 Plug 'leafgarland/typescript-vim'
+Plug 'vim-test/vim-test'
 Plug 'Valloric/YouCompleteMe'
 
 
