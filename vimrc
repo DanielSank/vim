@@ -1,8 +1,9 @@
 call plug#begin('~/.vim/plugged')
-
 Plug 'jlanzarotta/bufexplorer'
 Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'tmhedberg/SimpylFold'
 Plug 'tpope/vim-surround'
@@ -32,6 +33,16 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-b)
 map <Leader>l <Plug>(easymotion-w)
+
+"" fzf
+map <Leader>a :GFiles<CR>
+map <Leader>A :GFiles?<CR>
+map <Leader>s :Rg <C-r><C-w><CR>
+" trailing whitespace intentional here
+map <Leader>S :Rg 
+map <Leader>d :BLines<CR>
+map <Leader>D :Lines<CR>
+map <Leader>v :Buffers<CR>
 
 "" tagbar
 nmap <F8> :TagbarToggle<CR>
