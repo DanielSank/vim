@@ -30,5 +30,5 @@ My vim configuration
     cd ~/.config
     ln -s ~/.vim/nvim nvim
     ```
-1. Put `plug.vim` in `~/.local/share/nvim/site/autoload`.
+1. Put `plug.vim` (the `vim-plug` file) in `~/.local/share/nvim/site/autoload`.
 1. Start neovim with `nvim`, and run `:PlugUpgrade` and `:PlugInstall`.
