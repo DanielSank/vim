@@ -50,6 +50,9 @@ map <C-l> <C-w>l
 
 "" **General editor stuff**
 
+" Resize windows when resizing terminal
+autocmd VimResized * wincmd =
+
 " Ignore certain filetypes
 set wildignore=*.git,*.bak,*.pyc,*.swp,*.swp,*~
 :set guicursor=i:block
