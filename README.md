@@ -20,7 +20,11 @@ My vim configuration
     sudo mv neovim.appimage /usr/local/bin/nvim
     sudo chmod a+rx /usr/local/bin/nvim
     ```
-1. Set up NPM
+1. If neovim won't start because of a permissions issue, try
+    ```
+    sudo chown <username>:primarygroup $(which nvim)
+    ```
+3. Set up NPM
     ```
     sudo apt-get install npm
     sudo npm -g install pyright
