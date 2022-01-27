@@ -2,6 +2,7 @@ call plug#begin(stdpath('data') . '/plugged')
 Plug 'jlanzarotta/bufexplorer'
 Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() }}
 Plug 'junegunn/fzf.vim'
 Plug 'tmhedberg/SimpylFold'
 Plug 'tpope/vim-surround'
@@ -20,6 +21,10 @@ let g:bufExplorerShowRelativePath=1
 let g:bufExplorerSplitOutPathName=0
 " Let \\ open the bufexplorer
 nmap <Leader>\ <Leader>be
+
+"" doge
+let g:doge_doc_standard_python = 'google'
+nmap <Leader>d :DogeGenerate google<CR>
 
 "" easymotion
 let g:EasyMotion_do_mapping = 0  " Disable default mappings
