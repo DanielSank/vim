@@ -10,15 +10,15 @@
     ```
     sudo chown <username>:primarygroup $(which nvim)
     ```
-3. Set up NPM
-    ```
-    sudo apt-get install npm
-    sudo npm -g install pyright
-    ```
 1. Symlink neovim config directory to this repo
     ```
     cd ~/.config
     ln -s ~/.vim/nvim nvim
     ```
 1. Put `plug.vim` (the `vim-plug` file) in `~/.local/share/nvim/site/autoload`.
-1. Start neovim with `nvim`, and run `:PlugUpgrade` and `:PlugInstall`.
+1. Start neovim with `nvim`, and run
+    ```
+    :PlugUpgrade
+    :PlugInstall
+    :CocInstall coc-pyright
+    ```
